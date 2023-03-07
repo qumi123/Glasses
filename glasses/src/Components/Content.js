@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import Glasses from './Glasses'
-import Model from './Models'
+import Models from './Models'
 class Content extends Component {
   render() {
     return (
       <div>
-        <Model/>
+        <Models/>
         <Glasses/> 
       </div>
     )

@@ -3,12 +3,13 @@
     height: 585px;
     position: absolute;
     background-color: transparent;
-    top: 205px;
+    top: 238px;
     left: 188px;
     border: none;
 }
 
 .card-img {
+    opacity: 50%;
     width: 268px;
     height: 86px;
     align-self: center;
@@ -17,47 +18,24 @@
 
 .card-body {
     text-align: left;
-    height: 50%;
+    height: 45%;
     background-color: rgba(208, 68, 135, 0.352);
 }
 
 .card-body h1 {
-    color: rgb(68, 96, 235);
+    color: #8998e1;
 }
-.card-body p{
-    font-size: 50px;
-}
-.listGlasses {
-    gap :10px;
+
+
+.list {
+    gap: 10px;
     width: 80%;
     margin: auto;
-    background-color: white;
     padding: 20px;
     display: flex;
 }
 
-
-.img-btn-glass {
+.img-glass {
     width: 100%;
-}
-
-.items {
-    margin-top: 100px;
-}
-
-button.glass {
-    border: 1px solid rgba(128, 128, 128, 0.465);
-}
-
-button.glass:hover {
-    border-color: red;
-}
-
-img.img-btn-glass {
-    width: 100px;
-}
-
-.card-body p {
-    font-size: 12px;
 }
 

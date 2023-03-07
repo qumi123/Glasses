@@ -9,16 +9,16 @@ class Glasses extends Component {
     tryOnGlass: {}
   };
   renderGlasses = () => {
-    let lstGlassUIs = this.listGlasses.map((glass, index) => {
+    let glassUI = this.listGlasses.map((glass, index) => {
       return (
         <div key={glass.id} className="col-2">
           <button onClick={() => this.changeGlass(glass)}>
-            <img src={glass.url} className="img-btn-glass" alt="..." />
+            <img src={glass.url} className="img-glass" alt="..." />
           </button>
         </div>
       );
     });
-    return lstGlassUIs;
+    return glassUI;
   };
 
   putOnGlass = () => {
@@ -29,8 +29,8 @@ class Glasses extends Component {
           <img src={url} alt="" className="card-img"></img>
           <div className="card-body">
             <h1>{name}</h1>
-            <p>{price}$</p>
-            <p>{desc}</p>
+            <p style={{ fontSize: "2rem", color: "white" }}>{price}$</p>
+            <p style={{ fontSize: "1rem", color: "white" }}>{desc}</p>
           </div>
         </div>
       );
@@ -49,7 +49,7 @@ class Glasses extends Component {
     return (
       <div className="glasss">
         {this.putOnGlass()}
-        <div className="listGlasses row">{this.renderGlasses()}</div>
+        <div className="list row">{this.renderGlasses()}</div>
       </div>
     );
   }
